@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Clyde Overby",
+      "authorEmail": "coverby@ur.rochester.edu",
+      "authorUrl": "github.com/coverby"
+    }
+  }
+}
