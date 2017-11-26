@@ -70,10 +70,15 @@
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true,
-    "collectCoverageFrom": ["lib/**/*.{js,jsx}", "!**/node_modules/**", "!**/ve"]
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/ve"
+    ]
   },
   "license": "GPL-3.0",
   "dependencies": {
+    "csv": "^2.0.0",
     "lowdash": "^1.1.0"
   }
 }
