@@ -79,6 +79,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "csv": "^2.0.0",
-    "lowdash": "^1.1.0"
+    "lowdash": "^1.1.0",
+    "path": "^0.12.7"
   }
 }
