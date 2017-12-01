@@ -4,13 +4,13 @@
 ## Installation
 
 ```sh
-$ npm install --save graph-mcmc
+$ npm install --save graphMcmc
 ```
 
 ## Usage
 
 ```js
-const graphMcmc = require('graph-mcmc');
+const graphMcmc = require('graphMcmc');
 
 graphMcmc('Rainbow');
 ```
