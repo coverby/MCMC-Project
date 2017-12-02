@@ -1,7 +1,8 @@
 {
   "name": "graph-mcmc",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Javascript MCMC Che 477 Project",
+  "entry point": "lib/index.js",
   "homepage": "",
   "author": {
     "name": "Clyde Overby",
@@ -11,6 +12,9 @@
   "files": [
     "lib"
   ],
+  "bin": {
+    "graph-mcmc": "./lib"
+  },
   "main": "lib/index.js",
   "keywords": [
     ""
@@ -32,7 +36,9 @@
     "prepublish": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "start": "node 'require('./lib/index.js').main()'",
+    "graph-mcmc": "node -e \"require('./index.js').main()\""
   },
   "lint-staged": {
     "*.js": [
@@ -80,6 +86,7 @@
   "dependencies": {
     "csv": "^2.0.0",
     "lowdash": "^1.1.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.7"
   }
 }
