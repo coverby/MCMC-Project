@@ -2,7 +2,7 @@
 > Javascript MCMC Che 477 Project
 
 # Overview
-This package uses a Markov chain Monte Carlo algorithm to alter an input graph using the proposal distribution of p new/p old = exp (-(theta new - theta old)/T), where theta is the sum of all edge lengths combined with the sum of all shortest paths from node 0.  The output of the program are summary statistics and examples of the top 1% of graphs encountered during iteration.
+This package uses a Markov chain Monte Carlo algorithm to alter an input graph using the proposal distribution of p new/p old = exp (-(theta new - theta old)/T), where theta is the sum of all edge lengths (multiplied by weight parameter gamma) combined with the sum of all shortest paths from node 0.  Base edge weight is the euclidian distance between node coordinates.  The output of the program are summary statistics and examples of the top 1% of graphs encountered during iteration.
 
 ## Installation
 
