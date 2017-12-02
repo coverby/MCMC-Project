@@ -25,19 +25,19 @@ This package exports modules: Graph, connected, edgeweight, nodecrawler, readfil
 
 This package takes an input file (located in the same directory as the graphmcmc.js) in the format:
 
-
->#Input file contains nodecount, node positions, and node connections
->#Node count:
->(integer)
->#Gamma parameter:
->(integer or float)
->#Temperature parameter:
->(integer or float)
->#Node coordinates:
->(float, float) (in pairs; must be #nodes of pairs)
->#Node connections:
->(integer, integer) (in pairs; initial graph must be connected or program will error)
-
+```
+#Input file contains nodecount, node positions, and node connections
+#Node count:
+(integer)
+#Gamma parameter:
+(integer or float)
+#Temperature parameter:
+(integer or float)
+#Node coordinates:
+(float, float) (in pairs; must be #nodes of pairs)
+#Node connections:
+(integer, integer) (in pairs; initial graph must be connected or program will error)
+```
 
 ## License
 
