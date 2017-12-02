@@ -82,7 +82,7 @@
       "!**/ve"
     ]
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "csv": "^2.0.0",
     "graceful-fs": "^4.1.11",

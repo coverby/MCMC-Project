@@ -1,6 +1,9 @@
 # graph-mcmc [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Javascript MCMC Che 477 Project
 
+# Overview
+This package uses a Markov chain Monte Carlo algorithm to alter an input graph using the proposal distribution of p new/p old = exp (-(theta new - theta old)/T), where theta is the sum of all edge lengths combined with the sum of all shortest paths from node 0.  The output of the program are summary statistics and examples of the top 1% of graphs encountered during iteration.
+
 ## Installation
 
 ```sh
@@ -8,12 +11,34 @@ $ npm install --save graphMcmc
 ```
 
 ## Usage
-
+Include this package with:
 ```js
 const graphMcmc = require('graphMcmc');
-
-graphMcmc('Rainbow');
 ```
+To use this program directly, use:
+```js
+node graphmcmc.js
+```
+
+This package exports modules: Graph, connected, edgeweight, nodecrawler, readfile, edgeproposal, main, looper 
+
+
+This package takes an input file (located in the same directory as the graphmcmc.js) in the format:
+
+
+>#Input file contains nodecount, node positions, and node connections
+>#Node count:
+>(integer)
+>#Gamma parameter:
+>(integer or float)
+>#Temperature parameter:
+>(integer or float)
+>#Node coordinates:
+>(float, float) (in pairs; must be #nodes of pairs)
+>#Node connections:
+>(integer, integer) (in pairs; initial graph must be connected or program will error)
+
+
 ## License
 
 MIT © [Clyde Overby](github.com/coverby)
