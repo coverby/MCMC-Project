@@ -1,6 +1,6 @@
 {
   "name": "graph-mcmc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Javascript MCMC Che 477 Project",
   "entry point": "lib/index.js",
   "homepage": "",

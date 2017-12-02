@@ -7,7 +7,7 @@ This package uses a Markov chain Monte Carlo algorithm to alter an input graph u
 ## Installation
 
 ```sh
-$ npm install --save graphMcmc
+$ npm install --save graph-mcmc
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ const graphMcmc = require('graphMcmc');
 ```
 To use this program directly, use:
 ```sh
-node graphmcmc.js
+$ node graphmcmc.js
 ```
 The program will require user input to specify input file and the desired number of graph permutations.
 
@@ -37,7 +37,7 @@ This package takes an input file (located in the same directory as the graphmcmc
 (integer, integer) (in pairs; initial graph must be connected or program will error)
 ```
 
-An example input filed (used for testing):
+An example input file (used for testing):
 ```
 #Input file contains nodecount, node positions, and node connections
 #Node count:
