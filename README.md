@@ -16,7 +16,7 @@ Include this package with:
 const graphMcmc = require('graphMcmc');
 ```
 To use this program directly, use:
-```js
+```sh
 node graphmcmc.js
 ```
 The program will require user input to specify input file and the desired number of graph permutations.
@@ -65,25 +65,25 @@ This package exports modules: Graph, connected, edgeweight, nodecrawler, readfil
 ### Graph
 Graph object that contains methods for adding and removing edges, producing node connection (adjacency) lists, and conditioning its data for use in other modules.
 
-### Boolean = connected(graph)
+### (Boolean) = connected(graph)
 Returns false if a node is found to be unconnected to other nodes.  Written by Dr. Andrew White.
 
 ### weight = edgeweight(graph, i, j)
 Returns the euclidian distance between nodes i and j on graph object.
 
-## totaledgeweight = nodecrawler(graph)
+### totaledgeweight = nodecrawler(graph)
 Returns the total weight of the graph using both edge weight summation and optimal-path-to-origin length.  Uses the Djikstra algorithm.
 
-## graph = readfile(inputfile)
+### graph = readfile(inputfile)
 Reads the inputfile and products a new graph based on parameters found.
 
-## newgraph = edgeproposal(graph)
+### newgraph = edgeproposal(graph)
 Proposes a modification (edge removal or edge addition) for the input graph and returns the modified graph if successful (or the input graph if not).  Proposals are evaluated using the proposal distribution function described in the overview.
 
-## main()
+### main()
 Begins prompting user for inputs required to begin the simulation.  Outputs summary statistics of top 1% of graphs encountered during iteration.
 
-## output = looper(graph, iterationcount)
+### output = looper(graph, iterationcount)
 Drives edgeproposal and evaluates ouput graph of edgeproposal.  Collects statistics on graphs encountered as iteration continues.  When the required number of graphs have been produced (based on iterationcount), it summarizes the top 1% of graphs based on occurrence and produces an object for output that contains .topg, .topw .probg, .probcounts, .avg0, .avge, and .avgw, which are:
 1. .topg: the top 1% highest scoring graphs objects
 2. .topw: the top 1% highest scoring graph total weights 
