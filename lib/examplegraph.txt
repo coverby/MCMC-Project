@@ -1,6 +1,6 @@
 #Input file contains nodecount, node positions, and node connections
 #Node count:
-4
+6
 #Gamma parameter:
 1
 #Temperature parameter:
@@ -10,8 +10,12 @@
 0, 1
 1, 0
 1, 1
+2, 2
+1, 3
 #Node connections:
 0, 1
 1, 2
 2, 3
 3, 0
+4, 0
+5, 3
